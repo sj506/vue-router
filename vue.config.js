@@ -1,4 +1,11 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service');
+module.exports = {
+  devServer: {
+    compress: true,
+    disableHostCheck: true,
+  },
+};
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+  transpileDependencies: true,
+  lintOnSave: false,
+});
